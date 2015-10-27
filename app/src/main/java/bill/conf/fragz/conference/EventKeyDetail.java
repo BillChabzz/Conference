@@ -10,6 +10,8 @@ import android.widget.GridView;
 
 public class EventKeyDetail extends AppCompatActivity {
 
+    Integer[] imageIDs ={};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
