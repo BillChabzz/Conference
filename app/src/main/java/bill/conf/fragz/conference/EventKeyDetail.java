@@ -1,6 +1,7 @@
 package bill.conf.fragz.conference;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -40,10 +41,34 @@ public class EventKeyDetail extends AppCompatActivity {
 
         GridView gridView= (GridView)findViewById(R.id.gridViewLegendary);
         gridView.setAdapter(new ImageAdapter(this));
+
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getBaseContext(), "Pic " + (position +1) +" selected",Toast.LENGTH_SHORT).show();;
+                Toast.makeText(getBaseContext(), "Pic " + (position +1) +" selected",Toast.LENGTH_SHORT).show();
+                switch (position){
+                    case 0:
+                        Intent i = new Intent(EventKeyDetail.this,Speakers.class);
+                        startActivity(i);
+                        finish();
+                        break;
+                    case 1:
+                        Intent j = new Intent(EventKeyDetail.this,Speakers.class);
+                        startActivity(j);
+                        finish();
+                        break;
+                    case 2:
+                        Intent k = new Intent(EventKeyDetail.this,Speakers.class);
+                        startActivity(k);
+                        finish();
+                        break;
+                    case 3:
+                        Intent l = new Intent(EventKeyDetail.this,Speakers.class);
+                        startActivity(l);
+                        finish();
+                        break;
+
+                }
             }
         });
     }
