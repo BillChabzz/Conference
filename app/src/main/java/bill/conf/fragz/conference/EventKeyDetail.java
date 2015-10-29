@@ -48,12 +48,12 @@ public class EventKeyDetail extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), "Pic " + (position +1) +" selected",Toast.LENGTH_SHORT).show();
                 switch (position){
                     case 0:
-                        Intent i = new Intent(EventKeyDetail.this,Speakers.class);
+                        Intent i = new Intent(EventKeyDetail.this,Speakerlist.class);
                         startActivity(i);
                         finish();
                         break;
                     case 1:
-                        Intent j = new Intent(EventKeyDetail.this,Speakers.class);
+                        Intent j = new Intent(EventKeyDetail.this,Agenda.class);
                         startActivity(j);
                         finish();
                         break;
