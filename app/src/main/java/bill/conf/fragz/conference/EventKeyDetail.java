@@ -34,7 +34,7 @@ public class EventKeyDetail extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Keynotes", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -50,22 +50,22 @@ public class EventKeyDetail extends AppCompatActivity {
                     case 0:
                         Intent i = new Intent(EventKeyDetail.this,Speakerlist.class);
                         startActivity(i);
-                        finish();
+
                         break;
                     case 1:
                         Intent j = new Intent(EventKeyDetail.this,Agenda.class);
                         startActivity(j);
-                        finish();
+
                         break;
                     case 2:
-                        Intent k = new Intent(EventKeyDetail.this,Speakers.class);
+                        Intent k = new Intent(EventKeyDetail.this,Agenda.class);
                         startActivity(k);
-                        finish();
+
                         break;
                     case 3:
-                        Intent l = new Intent(EventKeyDetail.this,Speakers.class);
+                        Intent l = new Intent(EventKeyDetail.this,Agenda.class);
                         startActivity(l);
-                        finish();
+
                         break;
 
                 }
