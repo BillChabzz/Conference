@@ -58,7 +58,7 @@ public class EventKeyDetail extends AppCompatActivity {
 
                         break;
                     case 2:
-                        Intent k = new Intent(EventKeyDetail.this,Agenda.class);
+                        Intent k = new Intent(EventKeyDetail.this,SettingsActivity.class);
                         startActivity(k);
 
                         break;
